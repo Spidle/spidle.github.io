@@ -1,0 +1,16 @@
+name: "Nathan Spidle"
+title: "Senior Web Application Penetration Tester"
+summary: >
+  Offensive security professional with 4+ years conducting full-scope web application and network cyber security assessments for government and commercial environments. Experienced in large-scale attack surface testing (200K+ assets), custom exploit development, automation tooling, and CVE-level vulnerability research. Strong background in infrastructure, automation, and executive communication. Operates independently in high-trust, mission-driven environments.
+
+affiliation: "eCPPTv2, OSCP, CRTO, CWES"
+profile_image: "images/Nathan Spidle - portrait.jpg"
+# highlights:
+#   - "CVE Holder"
+#   - "Generative AI in Museum Curation"
+#   - "Digital Preservation & Ethics"
+links:
+  - label: "Github"
+    url: "https://github.com/Spidle/"
+  - label: "LinkedIn"
+    url: "https://www.linkedin.com/in/nathan-spidle-b79592/"

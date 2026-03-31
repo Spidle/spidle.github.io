@@ -1,0 +1,68 @@
+baseURL = 'https://spidle.github.io/'
+locale = 'en-us'
+title = 'Nathan Spidle'
+theme = 'celadon'
+
+[params]
+  description = 'Senior Web Application Penetration Tester'
+  location = 'Greensboro, USA'
+
+[params.homepage]
+  sections = ["hero",  "research"]
+  # Disabled original
+  # sections = ["hero",  "research", "writing", "news"]
+
+  [params.homepage.hero]
+    enable = true
+    layout = "hero"
+    title = "About"
+
+  [params.homepage.news]
+    enable = true
+    layout = "news"
+    title = "News"
+
+  [params.homepage.research]
+    enable = true
+    layout = "cards"
+    title = "Research"
+
+  [params.homepage.writing]
+    enable = true
+    layout = "grid"
+    title = "Writing"
+
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        enableInShortcodes = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [
+            ["\\[", "\\]"],
+            ["$$", "$$"]
+          ]
+          inline = [
+            ["\\(", "\\)"],
+            ["$", "$"]
+          ]
+  [markup.highlight]
+    style = "friendly"
+    noClasses = false
+    lineNos = true
+    guessSyntax = true
+
+# ---------------------------------------------------------
+# CASCADING DEFAULTS
+# This applies settings to ALL files in the 'content' folder
+# ---------------------------------------------------------
+
+[[cascade]]
+  layout = "single"      # 1. The Rule: Use single.html
+  [cascade._target]
+    path = "/**"         # 2. The Scope: Inside any folder (** = "Recursive" - go as deep as you want)
+    kind = "page"        # 3. The Filter: But ONLY for regular text files (not list nor home pages)
